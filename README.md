@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://https://github.com/keshavarora2000/todo-app)
+- Live Site URL: [Todo app](https://todofront.netlify.app)
 
 ## My process
 
