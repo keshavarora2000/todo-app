@@ -1,0 +1,176 @@
+* , *::before, *::after {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    color: white;
+    margin: 0 5%;
+    font-weight: 400;
+    min-height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    /* background-color: hsl(0, 0%, 98%); */
+    background-color: hsl(235, 21%, 11%);
+    background-image: url(./images/bg-mobile-dark.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* COMMON ROW FOR FLEXBOX  */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* HEADER OF THE PAGE  */
+header {
+    padding: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.check , .entry .check{
+    margin-right: 1rem;
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgba(110, 110, 110, 0.582);
+}
+
+.check img {
+    height: 10px;
+    width: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    background: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.unchecked {
+    display: none;
+}
+
+.entry, .task {
+    /* color: hsl(234, 39%, 85%); */
+    color: hsl(234, 11%, 52%);
+    justify-content: left;
+    padding: 1rem;
+}
+
+.done {
+    color: rgba(110, 110, 110, 0.582);
+    text-decoration:line-through;
+}
+
+.entry {
+    padding: 0 1rem;
+}
+
+/* INPUT STYLING  */
+.entry input {
+    color: white;
+    height: 50px;
+    width: 85%;
+    border: 0;
+    font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    /* background-color: hsl(0, 0%, 98%); */
+    background-color: hsl(235, 24%, 19%);
+}
+.entry input:focus {
+    /* background-color: hsl(0, 0%, 98%); */
+    background-color: hsl(235, 24%, 19%);
+    outline: none;
+}
+
+.entry, .display, .all-tasks{
+    margin: 1rem 0;
+    border-radius: 5px;
+    /* background-color: hsl(0, 0%, 98%); */
+    background-color: hsl(235, 24%, 19%);
+}
+
+.task {
+    border-bottom: 1px solid rgba(73, 73, 73, 0.582);
+}
+
+.del {
+    margin-left: auto;
+    cursor: pointer;
+}
+
+/* TABLE STYLING  */
+.display {
+    color: hsl(234, 39%, 85%);
+    box-shadow: 0 0 10px black;
+    font-size: 0.8rem;
+}
+
+.allTask {
+    display: block;
+}
+
+.activeTasks , .completedTasks {
+    display: none;
+    background-color: hsl(235, 24%, 19%);
+}
+
+.clear-box {
+    color: hsl(234, 11%, 52%);
+    padding: 1rem;
+}
+
+.all-tasks {
+    padding: 1rem 4rem;
+    font-size: 0.8rem;
+    color: hsl(234, 11%, 52%);
+    justify-content: space-evenly;
+    box-shadow: 0 0 5px black;
+}
+
+.all-tasks div:hover , .clear-box .clear:hover {
+    color: hsl(220, 98%, 61%);
+    cursor: pointer;
+}
+
+/* DRAG TEXT STYLING  */
+.drag {
+    width: 85%;
+    margin: 1rem 0;
+    font-weight: 700;
+    box-shadow: 0;
+}
+
+/* ATTRIBUTION STYLING  */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* RESPONSIVE MEDIA QUERIES  */
+@media screen and (min-width: 800px) {
+    html {
+        font-size: 20px;
+    }
+    body {
+        margin: 0 30%;
+        background-image: url(./images/bg-desktop-dark.jpg);
+        background-size: 100% 250px;
+    }
+    header {
+        font-size: 2rem;
+    }
+    .entry input {
+        height: 70px;
+        font-size: 0.8rem;
+    }
+    .drag {
+        margin: 1rem 5rem;
+    }
+}

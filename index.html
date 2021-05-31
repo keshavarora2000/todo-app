@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Todo app</title>
+
+  <!-- STYLESHEET -->
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+  <!-- GOOGLE FONTS LINK -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <!-- HEADER OF PAGE -->
+  <header class="row">
+    <div class="heading">Todo</div>
+    <div class="theme">
+      <img class="sun" src="./images/icon-sun.svg" alt="Theme icon" id="icon">
+    </div>
+  </header>
+  <section class="todo">
+
+    <!-- ENTRY OF TODO -->
+    <form action="#" method="post" class="entry row" id="entry">
+      <!-- <div class="check" data-set="0">
+        <img class="unchecked" src="./images/icon-check.svg" alt="Checkbox for entry">
+      </div> -->
+      <input type="text" name="entry" placeholder="Create a new todo" />
+    </form>
+
+    <!-- TABLE WITH TODOS  -->
+    <div class="display allTask">
+
+      <!-- <div class="task row" data-set="1">
+        <div class="check" data-num="1">
+          <img class="unchecked" src="./images/icon-check.svg" alt="Checkbox for entry">
+        </div>
+        <p class="">Completed online Javascript course</p>
+        <img data-num="1" class="del" src="./images/icon-cross.svg" alt="Cross Icon">
+      </div> -->
+
+      <div class="clear-box row">
+        <div class="left"><span class="items-left">No</span> <span class="it">items</span> left</div>
+        <div class="clear">Clear Completed</div>
+      </div>
+
+    </div>
+
+    <div class="display activeTasks">
+
+      <div class="task row">
+        <div>
+          Active Tasks
+        </div>
+      </div>
+
+      <!-- <div class="task row" data-set="1">
+        <div class="check" data-num="1">
+          <img class="unchecked" src="./images/icon-check.svg" alt="Checkbox for entry">
+        </div>
+        <p class="">Completed online Javascript course</p>
+        <img data-num="1" class="del" src="./images/icon-cross.svg" alt="Cross Icon">
+      </div> -->
+
+    </div>
+
+    <div class="display completedTasks">
+
+      <div class="task row">
+        <div>
+          Completed Tasks
+        </div>
+      </div>
+
+      <!-- <div class="task row" data-set="1">
+        <div class="check" data-num="1">
+          <img class="" src="./images/icon-check.svg" alt="Checkbox for entry">
+        </div>
+        <p class="">Completed online Javascript course</p>
+        <img data-num="1" class="del" src="./images/icon-cross.svg" alt="Cross Icon">
+      </div> -->
+
+    </div>
+
+    <div class="all-tasks row">
+      <div class="all">All</div>
+      <div class="active">Active</div>
+      <div class="completed">Completed</div>
+    </div>
+
+  </section>
+
+  <div class="drag">
+  </div>
+
+  <!-- FRONTEND MENTOR ATTRIBUTION  -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Keshav Arora</a>.
+  </div>
+
+  <!-- JAVASCRIPT FILE  -->
+  <script src="index.js"></script>
+</body>
+</html>
